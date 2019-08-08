@@ -22,4 +22,4 @@ Bachelor of Information Technology, [University of Canberra](https://www.linkedi
 
 ### More about me
 - [Employment History](/about/employment-history)
-- [LinkedIn Profile](https://www.linkedin.com/in/palmer-andy/)
+- <a href="https://www.linkedin.com/in/palmer-andy/" target="_"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i> LinkedIn Profile</a>

@@ -40,4 +40,4 @@ weight: 1000
 
 ### More about me
 - [About Me](/about/me)
-- [LinkedIn Profile](https://www.linkedin.com/in/palmer-andy/)
+- <a href="https://www.linkedin.com/in/palmer-andy/" target="_"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i> LinkedIn Profile</a>

@@ -8,23 +8,38 @@ disqusShortname = "andy-palmer"
 [params]
   description = "Thoughts on all things programming"
   #themeColor = "theme-base-08"
+
+  # sidebar, copyright & license
+  copyright = "Andy Palmer"
+  showBuiltWith = true
+  
+[params.social]
+	github = "palmerandy"
+  linkedin = "palmer-andy"
+  stackoverflow = "3566997"
   
 [[menu.main]]
-    name = "Posts"
-    identifier = "posts"
-    url = "/posts/"
+  name = "Posts"
+  weight = 100
+  identifier = "posts"
+  url = "/posts/"
 
 [[menu.main]]
   name = "About Me"
+  weight = 200
   identifier = "about"
   url = "/about/me"
 
 [[menu.main]]
   name = "Employment History"
+  weight = 300
   identifier = "employment"
   url = "/about/employment-history"
 
-#[[menu.main]]
-#    name = "Tags"
-#    identifier = "tags"
-#    url = "/tags/"
+[[menu.main]]
+  weight = 400
+  name = "Tags"
+  identifier = "tags"
+  url = "/tags/"
+
+
