@@ -25,13 +25,13 @@ I used Hugo to create the static site and it seemed familiar to Wyam.
 > Hugo is one of the most popular open-source static site generators.  With its amazing speed and flexibility, Hugo makes building websites fun again.
 
 I became familiar with Hugo using the [excellent quick start](https://gohugo.io/getting-started/quick-start/).  This worked well but I wanted to change my theme. I chose my theme [Hyde](https://github.com/spf13/hyde) from the [list of blog themes on the](https://themes.gohugo.io/tags/blog/).  To swap themes I tweaked the instructions from the [quick start step three](https://gohugo.io/getting-started/quick-start/) to:
-{{< highlight cmd "linenos=table">}}
+```
 cd quickstart;\
 git init;\
 git submodule add https://github.com/spf13/hyde themes/hyde;\
 
 echo 'theme = "hyde"' >> config.toml
-{{< /highlight >}}
+```
 
 #### Markdown and Visual Studio Code
 Hugo supports [authoring blogs in Markdown](https://daringfireball.net/projects/markdown/).  

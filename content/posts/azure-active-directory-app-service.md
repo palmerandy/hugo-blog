@@ -66,9 +66,9 @@ We can now peform a FormUrlEncoded HTTP Post to https://login.microsoftonline.co
 {{< gist palmerandy aa19504cec56a215564a41ea66b733e6 >}}
 
 From here you can wrap the bearer token in a AuthenticationHeaderValue and add it to the Authorization property of your HttpClient's DefaultRequestHeaders:
-{{< highlight csharp "linenos=table">}}
+```
 var token = 
 await _azureAppServiceAuthenticator.GetBearerToken();            
 var header = new AuthenticationHeaderValue("Bearer", token);
 HttpClient.DefaultRequestHeaders.Authorization = header;
-{{< /highlight >}}
+```

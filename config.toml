@@ -12,6 +12,13 @@ disqusShortname = "andy-palmer"
   # sidebar, copyright & license
   copyright = "Andy Palmer"
   showBuiltWith = true
+
+  # https://highlightjs.org
+  highlightjs = true
+  highlightjsstyle = "github"
+  highlightjslanguages = ["csharp,cmd"]
+
+  postNavigation = false
   
 [params.social]
 	github = "palmerandy"
