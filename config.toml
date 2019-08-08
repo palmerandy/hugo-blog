@@ -1,0 +1,30 @@
+theme = "hyde-hyde"
+baseURL = "https://andypalmer.dev/"
+languageCode = "en-au"
+title = "Andy Palmer"
+disqusShortname = "andy-palmer"
+#disableKinds = ["categories"]
+
+[params]
+  description = "Thoughts on all things programming"
+  #themeColor = "theme-base-08"
+  
+[[menu.main]]
+    name = "Posts"
+    identifier = "posts"
+    url = "/posts/"
+
+[[menu.main]]
+  name = "About Me"
+  identifier = "about"
+  url = "/about/me"
+
+[[menu.main]]
+  name = "Employment History"
+  identifier = "employment"
+  url = "/about/employment-history"
+
+#[[menu.main]]
+#    name = "Tags"
+#    identifier = "tags"
+#    url = "/tags/"
