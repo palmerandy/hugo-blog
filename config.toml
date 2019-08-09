@@ -38,10 +38,10 @@ disqusShortname = "andy-palmer"
   url = "/about/me"
 
 [[menu.main]]
-  name = "Employment History"
+  name = "Professional Experience"
   weight = 300
-  identifier = "employment"
-  url = "/about/employment-history"
+  identifier = "experience"
+  url = "/about/professional-experience"
 
 [[menu.main]]
   weight = 400

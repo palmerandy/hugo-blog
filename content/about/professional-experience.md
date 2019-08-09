@@ -1,9 +1,7 @@
 ---
-title: "Employment History"
+title: "Professional Experience"
 date: 2019-07-07T03:01:10+05:00
 draft: false
-tags: ["Curriculum Vitae", "Employment History"]
-weight: 1000
 ---
 
 #### 2013 [Global Corporate Challenge](https://www.linkedin.com/company/global-corporate-challenge/) / [Virgin Pulse](https://www.linkedin.com/company/virgin-pulse/) 
