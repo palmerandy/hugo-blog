@@ -24,6 +24,7 @@ disqusShortname = "andy-palmer"
 	github = "palmerandy"
   linkedin = "palmer-andy"
   stackoverflow = "3566997"
+  gravatar = "andypalmer@outlook.com.au"
   
 [[menu.main]]
   name = "Posts"
