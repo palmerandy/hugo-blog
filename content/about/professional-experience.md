@@ -4,7 +4,7 @@ date: 2019-07-07T03:01:10+05:00
 draft: false
 ---
 
-#### 2013 [Global Corporate Challenge](https://www.linkedin.com/company/global-corporate-challenge/) / [Virgin Pulse](https://www.linkedin.com/company/virgin-pulse/) 
+#### 2013 - 2019 <a href="https://www.virginpulse.com/global-challenge" target="_">Virgin Pulse</a>
 
 ##### Senior Web Developer - September 2013 to Present
 
@@ -68,7 +68,7 @@ Virgin Pulse acquired Global Corporate Challenge in 2015.
 
 Approximately 100 employees at Global Corporate Challenge and 3,000 at Virgin Pulse. 
 
-As per [https://www.virginpulse.com/global-challenge/](https://www.virginpulse.com/global-challenge/):
+As per [https://www.virginpulse.com/global-challenge](https://www.virginpulse.com/global-challenge/):
 
 > 
 The Global Challenge is Virgin Pulse’s turnkey wellbeing challenge. It is a yearly team-based event-spectacular that equips your employees with the knowledge, tools and support they need to build new healthy habits. It’s simple and fun to use and can be rolled out in days.
@@ -78,7 +78,7 @@ For over 15 years, the Virgin Pulse Global Challenge has helped transform the cu
 
 </details>
 
-#### 2009 - 2013 [Liberty Financial](https://www.linkedin.com/company/liberty-financial-pty-ltd/)
+#### 2009 - 2013  <a href="https://www.liberty.com.au/" target="_">Liberty Financial</a>
 
 ##### Software Developer - December 2009 to September 2013
 
