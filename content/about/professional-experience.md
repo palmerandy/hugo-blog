@@ -4,7 +4,7 @@ date: 2019-07-07T03:01:10+05:00
 draft: false
 ---
 
-#### 2019 - {{ now.Format "2006"}} <a href="https://mondo.com.au" target="_">Mondo</a>
+#### 2019 - Present <a href="https://mondo.com.au" target="_">Mondo</a>
 
 ##### Technical Lead - November 2019 to Present
 
@@ -15,7 +15,7 @@ draft: false
   <summary>Technology Used</summary>
 
 - .NET 4.7 
-- .NET Core 2.
+- .NET Core 2
 - C# 7 
 - MVC 5 
 - Web API 2 
@@ -63,8 +63,7 @@ Approximately 500 employees.
 
 As per [https://mondo.com.au/):
 
-> 
-
+>
 We help businesses and communities make sense of what’s possible, then plan and deliver solutions to keep everyone ahead of the rapidly changing landscape.
 From connecting Australia’s largest wind farms to the grid, to helping maintain water and gas networks or assisting regional communities achieve their energy goals, we improve the way things flow today, then seek ways to do this even better tomorrow.
 
