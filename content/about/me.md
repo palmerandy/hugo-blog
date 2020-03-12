@@ -4,9 +4,9 @@ date: 2019-07-07T03:01:10+05:00
 draft: false
 ---
 
-I am a software developer with 16 years of experience spanning the complexities of large Government agencies, financial institutions and globally operated private organisations.  I live in Melbourne, Australia, currently working for [Virgin Pulse](https://www.linkedin.com/company/virgin-pulse/).  
+I am a software developer with 17 years of experience spanning the complexities of large Government agencies, financial institutions and globally operated private organisations.  I live in Melbourne, Australia, currently working for [Mondo](https://www.linkedin.com/company/mondo-power/).  
 
-My programming skills are primarily in the .NET Framework and .NET core using C#.  I regularly extend into HTML, JavaScript, CSS and SQL.  I embrace learning all technologies and have spent time professionally throughout many areas of the programming stack, including Web, Windows, iOS, SharePoint, and Data Warehousing solutions.
+My programming skills are primarily in the .NET Framework and .NET core using C#.  I regularly extend into HTML, JavaScript, CSS and SQL.  I embrace learning all technologies and have spent time professionally throughout many areas of the programming stack, including Web, Windows, iOS, SharePoint, Xamarin and Data Warehousing solutions.
 
 - I specialise in architecting Cloud friendly (highly available and scalable) solutions within Microsoft's Azure platform 
 - I am an advocate of Continuous Integration and Continuous Delivery (CI & CD) with extensive experience in Azure DevOps and infrastructure as code

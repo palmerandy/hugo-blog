@@ -4,9 +4,75 @@ date: 2019-07-07T03:01:10+05:00
 draft: false
 ---
 
+#### 2019 - {{ now.Format "2006"}} <a href="https://mondo.com.au" target="_">Mondo</a>
+
+##### Technical Lead - November 2019 to Present
+
+- Led  team along the journey of identifying why change is slow and developed a prioritised plan of how to fix it. Introduced 20% team time to aggressively tackle Technical Debt every sprint.  
+- Identifying, mitigating and resolving  performance problems after new client went live within a month of starting work with Mondo.
+
+<details>
+  <summary>Technology Used</summary>
+
+- .NET 4.7 
+- .NET Core 2.
+- C# 7 
+- MVC 5 
+- Web API 2 
+- HTML 5 
+- JavaScript ES 9 
+- CSS 3 
+- SQL
+- Entity Framework 6
+- Dapper
+- Xamarin.iOS
+
+AWS cloud computing services: 
+
+- AWS Lamda 
+- Amazon EC2
+- Amazon S3 
+- Amazon Simple Queue Service (SQS FIFO)
+- Amazon Relational Database Service (RDS)
+
+Continuous Integration and Continuous Delivery: 
+
+- Atlassian Bitbucket
+- TeamCity
+- Octopus Deploy
+- Git 
+- AWS Serverless Application Model (SAM)
+- Jira 
+</details>
+
+<details>
+  <summary>Responsibilities</summary>
+
+- Technical lead of nine developers.
+- Focus on delivering the right things, in the right way, at the right time for our customers.
+- A mixture of team leading, new features design & implementation, maintenance, architectural oversight and mentoring. 
+
+</details>
+
+<details>
+  <summary>About Mondo</summary>
+  
+Mondo provide a comprehensive range of services and technology for essential infrastructure across the energy, water and transport sectors.  
+
+Approximately 500 employees. 
+
+As per [https://mondo.com.au/):
+
+> 
+
+We help businesses and communities make sense of what’s possible, then plan and deliver solutions to keep everyone ahead of the rapidly changing landscape.
+From connecting Australia’s largest wind farms to the grid, to helping maintain water and gas networks or assisting regional communities achieve their energy goals, we improve the way things flow today, then seek ways to do this even better tomorrow.
+
+</details>
+
 #### 2013 - 2019 <a href="https://www.virginpulse.com/global-challenge" target="_">Virgin Pulse</a>
 
-##### Senior Web Developer - September 2013 to Present
+##### Senior Web Developer - September 2013 to September 2019
 
 - Grown primary product offering from 100,000 users into an efficient, **highly scalable website and API** that supports half a million users annually.  Most users interact concurrently throughout the flagship event that occurs between May and September making performance at scale crucial.
 - Developed **resilient, cloud-based architecture** within the Microsoft Azure Platform.
