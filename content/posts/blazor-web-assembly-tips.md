@@ -13,8 +13,8 @@ The team recently shipped Blazor WASM debugging support.  I followed the [excell
 Debugging is only > supported in Chrome based browsers.
 
 > Debugging requires either of the following browsers:
-- Microsoft Edge (version 80 or later)
-- Google Chrome (version 70 or later)
+> - Microsoft Edge (version 80 or later)
+> - Google Chrome (version 70 or later)
 
 ### Data Annotations not validating all properties
 Again the [documentation](https://docs.microsoft.com/en-us/aspnet/core/blazor/forms-validation?view=aspnetcore-3.1#nested-models-collection-types-and-complex-types) is excellent and this specifically calls it out:
@@ -30,8 +30,8 @@ I followed Andrea Cirioni's blog on [Hosting Blazor WebAssembly app on GitHub Pa
 After researching a while, I stumbled across this [github issue and solution from Steve Sanderson](https://github.com/dotnet/aspnetcore/issues/19796#issuecomment-598286345).  TLDR I copied [.GitAttributes file](
 https://github.com/SteveSandersonMS/TestGithubPages/blob/master/.gitattributes), and added it to my Git repository with the following command:
 
-{{< highlight csharp "linenos=table">}}
+```
 git add --renormalize .
-{{< /highlight >}}
+```
 
 This meant my simply Blazor Web Assembly app would run succesfully on [GitHub Pages](https://palmerandy.github.io/Running-Pace-Calculator/).  Source code can be found in my [Pace Calculator Github Repository](https://github.com/palmerandy/Pace-Calculator)).
