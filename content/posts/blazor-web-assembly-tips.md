@@ -2,7 +2,7 @@
 title: "Blazor Web Assembly Tips and gotchas"
 date: 2020-04-30T14:10:55+11:00
 draft: false
-tags: ["blazor", "wasm", "wasm"]
+tags: ["blazor", "web assembly", "wasm"]
 section: "blog"
 ---
 
@@ -19,7 +19,10 @@ Again the [validation documentation](https://docs.microsoft.com/en-us/aspnet/cor
 
 > Blazor provides support for validating form input using data annotations with the built-in DataAnnotationsValidator. However, the DataAnnotationsValidator only validates top-level properties of the model bound to the form that aren't collection- or complex-type properties.
 
-> To validate the bound model's entire object graph, including collection- and complex-type properties, use the ObjectGraphDataAnnotationsValidator provided by the experimental Microsoft.AspNetCore.Components.DataAnnotations.Validation package:
+> To validate the bound model's entire object graph, including collection- and complex-type properties, use the ObjectGraphDataAnnotationsValidator provided by the experimental Microsoft.AspNetCore.Components.DataAnnotations.Validation package
+
+### InputSelect can only bind to string and enum types
+I unsuccesfully tried to bind my *InputSelect* select list to an integer.  After a bit of research I found Steve Sanderson address this in this [GitHub Issue commment](https://github.com/dotnet/aspnetcore/issues/11181#issuecomment-506288035).  I adopted this approach and here is my [implementation](https://github.com/palmerandy/Pace-Calculator/blob/initial-commit/src/PaceCalculator.Blazor/InputSelectNumber.cs).
 
 ### Hosting statically on GitHub Pages fails with "Failed to find a valid digest in the 'integrity' attribute"
 I followed Andrea Cirioni's blog on [Hosting Blazor WebAssembly app on GitHub Pages](https://dev.to/cirio/hosting-blazor-webassembly-app-on-github-pages-137k).  This worked great except when I was done, I was seeing the following error:
