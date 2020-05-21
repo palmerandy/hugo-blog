@@ -24,7 +24,7 @@ Here are some recent technologies I created the above Running Pace Calculators w
 ### Blazor WebAssembly
 
 - Link to my Blazor WASM based [Running Pace Calculator](https://palmerandy.github.io/Running-Pace-Calculator/).
-- Link to [GitHub Repository](https://github.com/palmerandy/Pace-Calculator).
+- Link to <a href="https://github.com/palmerandy/Pace-Calculator" target="_"><i class="fab fa-github fa-lg" aria-hidden="true"></i> GitHub Repository</a>
 
 
 #### My take on Blazor:
@@ -32,7 +32,7 @@ If you are an experienced C# developer you will feel right at home writing C# an
 
 ### React
 - Link to my React based [Running Pace Calculator](https://palmerandy.github.io/Running-Calculator-React/)
-- Link to [GitHub Repository](https://github.com/palmerandy/Running-Calculator-React).
+- Link to <a href="https://github.com/palmerandy/Running-Calculator-React" target="_"><i class="fab fa-github fa-lg" aria-hidden="true"></i> GitHub Repository</a>
 
 #### My take on React:
 This is my prefered Javascript Single Page App library as it's a library!  I used [Create React App](https://github.com/facebook/create-react-app) and got up and running very quickly.  
