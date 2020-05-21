@@ -37,4 +37,4 @@ If you are an experienced C# developer you will feel right at home writing C# an
 #### My take on React:
 This is my prefered Javascript Single Page App library as it's a library!  I used [Create React App](https://github.com/facebook/create-react-app) and got up and running very quickly.  
 
-My biggest problem was not being able to easily set a value of a select element from the in built testing framework - more information in my [GitHib issue](https://github.com/palmerandy/Running-Calculator-React/issues/4).
+My biggest problem was not being able to easily set a value of a select element from the in built testing framework - more information in my <a href="https://github.com/palmerandy/Running-Calculator-React/issues/4" target="_"><i class="fab fa-github fa-lg" aria-hidden="true"></i> GitHub issue</a>
