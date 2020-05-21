@@ -12,6 +12,7 @@ For me my passion is running, so instead of building *Hello World* I build a *Ru
 ![Alt text](/images/pace-calculator-mockup.png "Pace Calculator Mock Up")
 
 It could be more complicated but it forces me to learn both the what and how to solve a few important problems:
+
 - What sort of testing does this technlogy support out of the box?  
 - How to deploy and host this technology as part of a CI/CD pipeline.  For static web applications I'm finding GitHub Pages an excellent free hosting provider.
 - How to validate user input.
