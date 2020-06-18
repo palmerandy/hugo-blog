@@ -7,8 +7,6 @@ tags: ["ASP.Net", "MVC", "Web API", "SignalR", "Automated Testing", "Integration
 
 I recently needed to extend a collection of automated end-to-end integration tests for an ASP.Net website.  They were a great starting point, but only covered part a small part of the service layer.  I needed to extend them so they covered more end-to-end scenarios which meant changing their entry point from the service layer to the real end points of the system - that is the MVC controller, the API controller and the SignalR Hub action. This way an end-to-end test could start with interact with any combination of MVC controller, the API controller and the SignalR Hub actions - nice.
 
-This series of blog post explains each step on the journey, and we start with the MVC Controller.
-
 ### MVC Controller
 
 When writing an integration test for and MVC controller we need to mimic the browser.  
@@ -20,3 +18,27 @@ In short we need to perform a get request, retrieve the value of the anti-forger
 The following Gist are the MVC helpers needed. I suggest starting at LoginHttpRequest() of MvcHttpClientHelper.
 
 {{< gist palmerandy 2da6b7fc0e9bfa0b4a8e39888677468b>}}
+
+### SignalR
+
+The SignalR Hub action I need to test requires authentication.  This is is easily resolved by using the above ```MvcHttpClientHelper(MvcHttpClient).LoginHttpRequest()```.
+//TODO:double check the hub action requires auth
+I followed the [documentation on how to call SignalR server methods from the client](https://docs.microsoft.com/en-us/aspnet/signalr/overview/guide-to-the-api/hubs-api-guide-net-client#how-to-call-server-methods-from-the-client).  
+
+//TODO:re-write and put into gist
+
+protected async Task AssignJob(Guid jobId, string userId)
+{
+    //ensure we are logged in so that MvcCookieContainer is set allowing us to auth with SignalR Hub.
+    await new MvcHttpClientHelper(MvcHttpClient).LoginHttpRequest();
+    using (var hubConnection = new HubConnection(WebSiteUrl))
+    {
+        var jobHub = hubConnection.CreateHubProxy("jobsHub");
+        hubConnection.CookieContainer = MvcCookieContainer;
+
+        await hubConnection.Start();
+        await jobHub.Invoke("Assign", userId, "GT", jobId.ToString(), hubConnection.ConnectionId);
+    }
+}
+
+### Web API
