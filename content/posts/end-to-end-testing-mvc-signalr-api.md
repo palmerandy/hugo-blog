@@ -1,5 +1,5 @@
 ---
-title: "End-to-End Testing across ASP.Net MVC, Web API and SignalR Hubs"
+title: "End-to-End Testing in C# across ASP.Net MVC, Web API and SignalR Hubs"
 date: 2020-01-11T18:02:11+11:00
 draft: false
 tags: ["ASP.Net", "MVC", "Web API", "SignalR", "Automated Testing", "Integration Testing", "End-to-End Testing"]
