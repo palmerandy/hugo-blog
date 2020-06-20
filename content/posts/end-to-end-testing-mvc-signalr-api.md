@@ -5,7 +5,7 @@ draft: false
 tags: ["ASP.Net", "MVC", "Web API", "SignalR", "Automated Testing", "Integration Testing", "End-to-End Testing"]
 ---
 
-I recently needed to extend a collection of automated end-to-end integration tests for an ASP.Net website.  They were a great starting point, but only covered part a small part of the service layer.  I needed to extend them so they covered more end-to-end scenarios which meant changing their entry point from the service layer to the real end points of the system - that is the MVC controller, the API controller and the SignalR Hub action. This way an end-to-end test could start with interact with any combination of MVC controller, the API controller and the SignalR Hub actions - nice.
+I recently extended a collection of automated end-to-end integration tests for an ASP.Net website.  They were a great starting point, but only covered part a small part of the service layer.  I needed to extend them so they covered more end-to-end scenarios which meant changing their entry point from the service layer to the real end points of the system - that is the MVC controller, the API controller and the SignalR Hub action. This way an end-to-end test could start with interact with any combination of MVC controller, the API controller and the SignalR Hub actions - nice.  This allowed for real end-to-end world scenarios, like starting with a MVC action, followed by a SignalR action, followed by a Web API action.
 
 ### MVC Controller
 
@@ -15,17 +15,17 @@ In MVC you should be using [anti-forgery tokens](https://docs.microsoft.com/en-u
 
 In short we need to perform a get request, retrieve the value of the anti-forgery token from the response, and use it when performing the subsequent post request.  Additionally the cookies are copied from the previous response to the next request. By mimicing the browser we don't introduce an insecure backdoor by doing something silly like disabling or weaking anti-forgery tokens.
 
-The following Gist are the MVC helpers needed. I suggest starting at LoginHttpRequest() of MvcHttpClientHelper.
+The following Gist are the MVC helpers needed. I suggest starting at ```LoginHttpRequest() of MvcHttpClientHelper```.
 
 {{< gist palmerandy 2da6b7fc0e9bfa0b4a8e39888677468b>}}
 
 ### SignalR
 
-The SignalR Hub action I need to test does not allow anonymous access.  Because it uses same authentication as the hosting MVC application I can simple use the above ```MvcHttpClientHelper(MvcHttpClient).LoginHttpRequest()```.  Then simply follow the [documentation on how to call SignalR server methods from the client](https://docs.microsoft.com/en-us/aspnet/signalr/overview/guide-to-the-api/hubs-api-guide-net-client#how-to-call-server-methods-from-the-client).  
+The SignalR Hub action I need to test does not allow anonymous access.  Because it uses same authentication as the hosting MVC application I can simple use the above ```MvcHttpClientHelper(MvcHttpClient).LoginHttpRequest()```.  Then follow the [documentation on how to call SignalR server methods from the client](https://docs.microsoft.com/en-us/aspnet/signalr/overview/guide-to-the-api/hubs-api-guide-net-client#how-to-call-server-methods-from-the-client).  
 
 {{< gist palmerandy 17dcf71567005f2f2e810aa75de41bba>}}
 
 ### Web API
 
-If you have read this far, you should already know what to do for Web API.
+If you have read this far, you should already know what to do for Web API.  Here is the code.
 {{< gist palmerandy 0f6c396fcd51fb89b4b98aa04ba120ae>}}
