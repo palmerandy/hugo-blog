@@ -1,5 +1,5 @@
 ---
-title: "End-to-End Testing in C# across ASP.Net MVC, Web API and SignalR Hubs"
+title: "End-to-End Testing in C# ASP.Net MVC, Web API and SignalR"
 date: 2020-01-11T18:02:11+11:00
 draft: false
 tags: ["ASP.Net", "MVC", "Web API", "SignalR", "Automated Testing", "Integration Testing", "End-to-End Testing"]
@@ -21,24 +21,11 @@ The following Gist are the MVC helpers needed. I suggest starting at LoginHttpRe
 
 ### SignalR
 
-The SignalR Hub action I need to test requires authentication.  This is is easily resolved by using the above ```MvcHttpClientHelper(MvcHttpClient).LoginHttpRequest()```.
-//TODO:double check the hub action requires auth
-I followed the [documentation on how to call SignalR server methods from the client](https://docs.microsoft.com/en-us/aspnet/signalr/overview/guide-to-the-api/hubs-api-guide-net-client#how-to-call-server-methods-from-the-client).  
+The SignalR Hub action I need to test does not allow anonymous access.  Because it uses same authentication as the hosting MVC application I can simple use the above ```MvcHttpClientHelper(MvcHttpClient).LoginHttpRequest()```.  Then simply follow the [documentation on how to call SignalR server methods from the client](https://docs.microsoft.com/en-us/aspnet/signalr/overview/guide-to-the-api/hubs-api-guide-net-client#how-to-call-server-methods-from-the-client).  
 
-//TODO:re-write and put into gist
-
-protected async Task AssignJob(Guid jobId, string userId)
-{
-    //ensure we are logged in so that MvcCookieContainer is set allowing us to auth with SignalR Hub.
-    await new MvcHttpClientHelper(MvcHttpClient).LoginHttpRequest();
-    using (var hubConnection = new HubConnection(WebSiteUrl))
-    {
-        var jobHub = hubConnection.CreateHubProxy("jobsHub");
-        hubConnection.CookieContainer = MvcCookieContainer;
-
-        await hubConnection.Start();
-        await jobHub.Invoke("Assign", userId, "GT", jobId.ToString(), hubConnection.ConnectionId);
-    }
-}
+{{< gist palmerandy 17dcf71567005f2f2e810aa75de41bba>}}
 
 ### Web API
+
+If you have read this far, you should already know what to do for Web API.
+{{< gist palmerandy 0f6c396fcd51fb89b4b98aa04ba120ae>}}
