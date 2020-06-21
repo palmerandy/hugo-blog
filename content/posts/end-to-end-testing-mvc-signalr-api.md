@@ -2,7 +2,7 @@
 title: "End-to-end Testing in C# ASP.Net MVC, Web API and SignalR"
 date: 2020-01-11T18:02:11+11:00
 draft: false
-tags: ["ASP.Net", "MVC", "Web API", "SignalR", "Automated Testing", "Integration Testing", "End-to-End Testing", "C#"]
+tags: ["ASP.Net", "MVC", "Web API", "SignalR", "Automated Testing", "Integration Testing", "End-to-End Testing", ".NET"]
 ---
 
 I'm a big fan of automated testing and a strong advocate of the development team owning automated tests.  I find C# end-to-end integration tests an attractive offering as development teams are already familar with the language and how to write tests and so ver little upskilling is required.  
