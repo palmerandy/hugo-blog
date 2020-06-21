@@ -2,7 +2,7 @@
 title: "Blazor Web Assembly Tips and gotchas"
 date: 2020-04-30T14:10:55+11:00
 draft: false
-tags: ["blazor", "web assembly", "wasm"]
+tags: ["blazor", "web assembly", "wasm", "github pages"]
 section: "blog"
 ---
 

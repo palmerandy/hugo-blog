@@ -8,8 +8,8 @@ draft: false
 
 ##### Technical Lead - November 2019 to Present
 
-- Led  team along the journey of identifying why change is slow and developed a prioritised plan of how to fix it. Introduced 20% team time to aggressively tackle Technical Debt every sprint.  
-- Identifying, mitigating and resolving  performance problems after new client went live within a month of starting work with Mondo.
+-	Introduced a culture of pair programming. Improving software quality and sharing of domain knowledge even when working remotely through COVID pandemic.
+-	Led team along the journey of identifying why change is slow and developed a prioritised plan of how to fix it. Introduced 20% team time to aggressively tackle Technical Debt every sprint.  
 
 <details>
   <summary>Technology Used</summary>
@@ -38,6 +38,7 @@ AWS cloud computing services:
 Continuous Integration and Continuous Delivery: 
 
 - Atlassian Bitbucket
+- GitHub
 - TeamCity
 - Octopus Deploy
 - Git 

@@ -2,7 +2,7 @@
 title: "Finding your hello world"
 date: 2020-05-20T18:02:11+11:00
 draft: false
-tags: ["hello world", "blazor", "react"]
+tags: ["hello world", "blazor", "react", "typescript", "github pages"]
 ---
 
 I've never liked creating *Hello World* as a way to understand a new technology.  Recently I have been employing a new technique of building a small application that I have a passion for.
@@ -35,6 +35,6 @@ If you are an experienced C# developer you will feel right at home writing C# an
 - Link to <a href="https://github.com/palmerandy/Running-Calculator-React" target="_"><i class="fab fa-github fa-lg" aria-hidden="true"></i> GitHub Repository</a>
 
 #### My take on React:
-This is my prefered Javascript Single Page App library as it's a library!  I used [Create React App](https://github.com/facebook/create-react-app) and got up and running very quickly.  
+This is my prefered Javascript Single Page App library as it's a library!  I used [Create React App](https://github.com/facebook/create-react-app) and got up and running very quickly.  For large apps it's a no brainer to use TypeScript.
 
 My biggest problem was not being able to easily set a value of a select element from the in built testing framework - more information in my <a href="https://github.com/palmerandy/Running-Calculator-React/issues/4" target="_"><i class="fab fa-github fa-lg" aria-hidden="true"></i> GitHub issue</a>
