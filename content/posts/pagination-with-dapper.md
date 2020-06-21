@@ -2,7 +2,7 @@
 title: "C# SQL Database pagination using Dapper ORM"
 date: 2019-11-11T20:08:07+22:00
 draft: false
-tags: ["Dapper", "sql", "pagination", ".NET"]
+tags: ["Dapper", "sql", "pagination"]
 section: "blog"
 ---
 
