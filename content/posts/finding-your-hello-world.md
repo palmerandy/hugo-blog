@@ -2,7 +2,7 @@
 title: "Finding your hello world"
 date: 2020-05-20T18:02:11+11:00
 draft: false
-tags: ["hello world", "blazor", "react", "typescript"]
+tags: ["hello world", "blazor", "react", "typescript", "github pages", "C#"]
 ---
 
 I've never liked creating *Hello World* as a way to understand a new technology.  Recently I have been employing a new technique of building a small application that I have a passion for.
