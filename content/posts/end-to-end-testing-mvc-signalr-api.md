@@ -1,15 +1,17 @@
 ---
-title: "End-to-End Testing in C# ASP.Net MVC, Web API and SignalR"
+title: "End-to-end Testing in C# ASP.Net MVC, Web API and SignalR"
 date: 2020-01-11T18:02:11+11:00
 draft: false
-tags: ["ASP.Net", "MVC", "Web API", "SignalR", "Automated Testing", "Integration Testing", "End-to-End Testing"]
+tags: ["ASP.Net", "MVC", "Web API", "SignalR", "Automated Testing", "Integration Testing", "End-to-End Testing", "C#"]
 ---
 
-I recently extended a collection of automated end-to-end integration tests for an ASP.Net website.  They were a great starting point, but only covered part a small part of the service layer.  I needed to extend them so they covered more end-to-end scenarios which meant changing their entry point from the service layer to the real end points of the system - that is the MVC controller, the API controller and the SignalR Hub action. This way an end-to-end test could start with interact with any combination of MVC controller, the API controller and the SignalR Hub actions - nice.  This allowed for real end-to-end world scenarios, like starting with a MVC action, followed by a SignalR action, followed by a Web API action.
+I'm a big fan of automated testing and a strong advocate of the development team owning automated tests.  I find C# end-to-end integration tests an attractive offering as development teams are already familar with the language and how to write tests and so ver little upskilling is required.  
+
+I recently extended a collection of automated end-to-end integration tests for an ASP.Net .NET framework website.  They were a great starting point, but only covered a small part of the service layer.  The needed to be extended so they covered more end-to-end scenarios which meant changing their entry point from the service layer to the real end points of the system - that is the MVC controller, the API controller and the SignalR Hub action. This way an end-to-end test could start with interact with any combination of MVC controller, the API controller and the SignalR Hub actions - nice.  This allowed for real end-to-end world scenarios, like starting with a MVC action, followed by a SignalR action, followed by a Web API action.
 
 ### MVC Controller
 
-When writing an integration test for and MVC controller we need to mimic the browser.  
+Getting started with MVC end-to-end testsing isn't as obvious as it should be.  When writing an integration test for MVC we need to mimic the browser to have success.  
 
 In MVC you should be using [anti-forgery tokens](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/preventing-cross-site-request-forgery-csrf-attacks) to prevent against Cross-Site Request Forgery (CSRF).  By trying to mimic the browser I eventually found an [excellent blog article](https://geeklearning.io/asp-net-core-mvc-testing-and-the-synchronizer-token-pattern/) written by Arnuad.  
 
