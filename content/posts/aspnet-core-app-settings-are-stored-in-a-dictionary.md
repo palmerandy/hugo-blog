@@ -24,7 +24,7 @@ This can be problematic if this isn't known.  For instance consider an array in 
     ]
   }
 }
-````
+```
 This would flatten into:
 
 ```
@@ -44,7 +44,7 @@ The problem occurs when you go to override the array in another environment `app
     ]
   }
 }
-````
+```
 
 Before knowing this I would have expected one element of `myarray` containing the value "override all elements of the myarray".  I now know this wouldn't be the case, and that it would actually would be 
 "myproperty:myarray:0:name" = "override all elements of the myarray"
