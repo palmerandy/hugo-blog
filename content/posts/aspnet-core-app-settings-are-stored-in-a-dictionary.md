@@ -1,10 +1,8 @@
-
-
 ---
 title: "ASPNET Core appsettings are stored in a dictionary"
-date: 2020-11-19T16:05:20+53:00
-draft: true
-tags: ["C#", "ASPNET Core", "appsettings.json"]
+date: 2020-11-18T14:05:20+53:00
+draft: false
+tags: ["ASPNET Core", "appsettings.json", "did you know", "learning in the open"]
 ---
 
 Today I learned the ASPNET Core reads appsettings into a key-value pair dictionary.  This is outlined in the [Hierarchical configuration data section of the Configuration documentation](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.1#hierarchical-configuration-data-1):
