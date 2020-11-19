@@ -46,6 +46,15 @@ The problem occurs when you go to override the array in another environment `app
 }
 ```
 
-Before knowing this I would have expected one element of `myarray` containing the value "override all elements of the myarray".  I now know this wouldn't be the case, and that it would actually would be 
+Before knowing this I would have expected one element of `myarray` containing the value "override all elements of the myarray".  I now know this wouldn't be the case, and that it would actually would be:
+
+```
 "myproperty:myarray:0:name" = "override all elements of the myarray"
 "myproperty:myarray:1:name" = "two"
+```
+
+That extra appsetting value might be fine, or it might be a dragon - hence this blog post.
+
+The learning for me is to only put values into `appsettings.json` that you want to have in each environment. For me I'll now use `appsettings.local.json` as a local environment.
+
+Hope this helps you out!
