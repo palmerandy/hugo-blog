@@ -5,21 +5,19 @@ draft: false
 tags: ["Latent Bugs", "Code maintainability", "dotNET"]
 ---
 
-One thing that I, and many developers I talk to, find annoying is when you receive an object from any API that is partially inflated.  I define a partially inflated object as:
+One thing that I, and many developers I talk to, find annoying is when you receive an object from any API that is partially inflated.  
 
-> any object that you receive that has one or more properties not set.  
-
-A partially inflated object is any object that you receive that has one or more properties not set.  
+> I define a partially inflated object as any object that you receive that has one or more properties not set.  
 
 For instance consider an API that returns the following fictitious ```FunRun``` class and in particular the ```AthleteIds``` property.  
  
 ```
 public class FunRun
 {
-    [Required]
+
     public Guid Id { get; set; }
 
-    [Required]
+
     public string Name { get; set; }
 
     public Guid[] AthleteIds { get; set; }
@@ -75,28 +73,22 @@ public interface IFunRun
 
     public string Name { get; set; }
 }
-```
 
-```
 public class FunRunWithoutAthletes : IFunRun
 {
-    [Required]
+
     public Guid Id { get; set; }
 
-    [Required]
+
     public string Name { get; set; }
 
-    public Guid[] AthleteIds { get; set; }
+    // Note no AthleteIds here.
 }
-```
-And
-```
+
 public class FunRunWithAthletes : IFunRun
 {
-    [Required]
     public Guid Id { get; set; }
 
-    [Required]
     public string Name { get; set; }
 
     public Guid[] AthleteIds { get; set; }
