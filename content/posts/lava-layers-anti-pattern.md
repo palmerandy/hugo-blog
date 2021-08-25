@@ -2,7 +2,7 @@
 title: "Lava Layers Anti-pattern"
 date: 2015-10-17T18:02:11+11:00
 draft: false
-tags: ["anti-pattern", "asp .net mvc", "asp .net webforms"]
+tags: ["anti-pattern", "asp .net mvc", "asp .net webforms", "Code maintainability"]
 ---
 
 Whenever introducing a new technology to an older codebase it's important to have a plan on how and when to replace the existing technology. Case in point, consider an existing codebase with over one hundred ASP .Net WebForms that are used every day. My team was forced to get creative when trying to introduce the shiny-ness that is ASP .Net MVC. [This great piece by Matt Hawley](http://www.eworldui.net/blog/post/2011/01/07/Using-Razor-Pages-with-WebForms-Master-Pages.aspx) was the creativity we needed.  It enabled the team to slowly integrate MVC one Model View Controller at a time at our own pace. Cut forward well over a year later, and the team removed the last ASP .Net WebForm and successfully migrated to ASP .Net MVC.

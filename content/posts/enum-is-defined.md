@@ -2,7 +2,7 @@
 title: "Enum.IsDefined()"
 date: 2018-02-06T14:07:11+11:00
 draft: false
-tags: ["did you know?", "enum"]
+tags: ["did you know?", "enum", "dotNET"]
 ---
 
 Did you know that you can assign any integral type value to an enum even if it is not part of the enum values?  
