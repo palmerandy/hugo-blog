@@ -14,9 +14,7 @@ For instance consider an API that returns the following fictitious ```FunRun``` 
 ```
 public class FunRun
 {
-
     public Guid Id { get; set; }
-
 
     public string Name { get; set; }
 
