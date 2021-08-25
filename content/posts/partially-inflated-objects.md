@@ -5,14 +5,17 @@ draft: false
 tags: ["Latent Bugs", "Code maintainability", "dotNET"]
 ---
 
-One thing that I, and many developers I talk to, find annoying is when you receive an object from any API that is partially inflated.  A partially inflated object is any object that you receive that has one or more properties not set.  
+One thing that I, and many developers I talk to, find annoying is when you receive an object from any API that is partially inflated.  I define a partially inflated object as:
+
+> any object that you receive that has one or more properties not set.  
+
+A partially inflated object is any object that you receive that has one or more properties not set.  
 
 For instance consider an API that returns the following fictitious ```FunRun``` class and in particular the ```AthleteIds``` property.  
  
 ```
 public class FunRun
 {
-    /// The unique identifier of a fun run
     [Required]
     public Guid Id { get; set; }
 
@@ -59,7 +62,43 @@ When you work in a small team or even by yourself it is easier for developers to
 
 The problem occurs when the team scales and other developers aren't aware objects may be partially inflated.  This is compounded by the fact that depending on which properties aren't inflated it may not be immediately obvious the object isn't fully inflated.
 
-
 ### The take home
 
-Always inflate all properties of a object to avoid for latent problems down the track.  If you have good reasons to not inflate a property, such as your client doesn't need it or it's costly, please create a object for that purpose (with the properties you do not need to inflate).  
+Always inflate all properties of a object to avoid for latent problems down the track.  If you have good reasons to not inflate a property, such as your client doesn't need it or it's costly, please create a object for that purpose with the properties you do not need to inflate.  
+
+For instance in the above fictitious scenario it would be better to have two classes with a shared interface:
+
+```
+public interface IFunRun
+{
+    public Guid Id { get; set; }
+
+    public string Name { get; set; }
+}
+```
+
+```
+public class FunRunWithoutAthletes : IFunRun
+{
+    [Required]
+    public Guid Id { get; set; }
+
+    [Required]
+    public string Name { get; set; }
+
+    public Guid[] AthleteIds { get; set; }
+}
+```
+And
+```
+public class FunRunWithAthletes : IFunRun
+{
+    [Required]
+    public Guid Id { get; set; }
+
+    [Required]
+    public string Name { get; set; }
+
+    public Guid[] AthleteIds { get; set; }
+}
+```
