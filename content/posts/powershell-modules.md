@@ -33,6 +33,7 @@ The following ensures the developer running your script is using Powershell Core
 ### How to create powershell modules
 
 You can create your own powershell modules.  Here is some example code showing:
+
 * Powershell module, 
 * Powershell module manifest 
 * Unit test (with mocks) using Pester.
@@ -40,6 +41,7 @@ You can create your own powershell modules.  Here is some example code showing:
 {{< gist palmerandy 15f3542112237ba4f0521db6e4bf2896 >}}
 
 Some links I found useful whilst developing:
+
 * https://docs.microsoft.com/en-us/powershell/scripting/developer/module/how-to-write-a-powershell-script-module?view=powershell-7.1
 * https://docs.microsoft.com/en-us/powershell/scripting/developer/module/how-to-write-a-powershell-module-manifest?view=powershell-7.1
 * https://github.com/pester/Pester
