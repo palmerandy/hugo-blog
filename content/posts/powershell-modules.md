@@ -1,7 +1,7 @@
 ---
 title: "Living under a rock - Powershell Core"
 date: 2020-09-27T19:11:45+10:00
-draft: true
+draft: false
 tags: ["Powershell", "Powershell Core", "Pester", "Unit Testing", "did-you-know","vs-code"]
 ---
 
